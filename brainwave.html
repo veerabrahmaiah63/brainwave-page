@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 30px;
+        }
+        /* nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        } */
+
+        .logo {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+            margin-left: auto;
+
+        }
+        .btn {
+            padding: 10px 20px;
+            border:none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 20px;
+            color: white;
+            background-color: #17a2b8;
+
+        }
+        .btn-enquiry {
+            background-color: #17a2b8;
+        }
+        .btn-donate {
+            background-color: #17a2b8;
+        }
+        .btn-contact {
+            background-color: #17a2b8;
+        }
+        .btn:hover {
+            opacity: 0.8;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: aqua;
+            padding:  20px 25px;
+            flex-wrap: wrap;
+            border-radius: 12px;
+
+        }
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+
+        }
+        .logo {
+            width: 50px;
+            height: auto;
+        }
+        .logo-text {
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        .dropdown-section{
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        .dropdown-section select {
+            padding: 8px 12px;
+            font-size: 17px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            align-items: center;
+        
+        
+        }
+
+
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-enquiry">Enquiry Now</button>
+                    <button class="btn btn-donate">Donate Now</button>
+                    <button class="btn btn-contact">Contact Us</button>
+                </div>
+            </div>   
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="logo-section">
+            <img src="brain.jpg" alt="brainwave-logo">
+            <h1 class="logo-text">brainwave</h1>
+        </div>
+        <div class="dropdown-section">
+            <select id="aboutDropdown">
+                <option value="">-- About US --</option>
+                <option value="contact">Contact Us</option>
+                <option value="location">Location</option>
+                <option value="join-team">Join Our Team</option>
+                <option value="meet-team">Meet Our Team</option>
+                <option value="reports">Reports & Publications</option>
+                <option value="strategy">Strategic Intentions</option>
+                <option value="families">For Families</option>
+                <option value="supporters">For Supporters</option>
+                <option value="news">News</option>
+            </select>
+            <select name="" id="">
+                <option value="">for Families</option>
+                <option value="">what we do</option>
+                <option value=""> children's stories</option>
+                <option value="">family enquiry form</option>
+                <option value="">family FAQs</option>
+                <option value="">who we can help</option>
+                <option value="">our facilities</option>
+                <option value="">our fees</option>
+                <option value="">our impact</option>
+                <option value="">our therapies</option>
+            </select>
+            <select name="" id="">
+                <option value="">for supports</option>
+                <option value=""> charity shops</option>
+                <option value=""> fundraise for us</option>
+                <option value="">make a donation</option>
+                <option value="">our events</option>
+                <option value="">our supports</option>
+            </select>
+            <select name="" id="">
+                <option value="">News</option>
+                <option value="">social media feeds</option>
+                <option value="">our podcast</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
